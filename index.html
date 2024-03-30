@@ -1,72 +1,58 @@
-<!DOCTYPE html>
-<html lang="en-US">
-<head>
+<html lang="en"><head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>About Sean – Sean Kronz</title>
-   
-    <style>
-        body {
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
-            max-width: 720px;
-            margin: 0 auto;
-            padding: 1em;
-        }
-
-        header, footer {
-            text-align: center;
-            padding: 1em 0;
-        }
-
-        nav ul {
-            list-style: none;
-            padding: 0;
-        }
-
-        nav ul li {
-            display: inline;
-            margin-right: 20px;
-        }
-
-        article {
-            margin-top: 2em;
-        }
-
-        .entry-title {
-            font-weight: bold;
-        }
-
-        .entry-content {
-            text-align: left;
-        }
+    <title>Sean Kronz</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <script defer="" data-domain="seankronz.com" src="https://plausible.io/js/script.js"></script>
+    <style> 
     </style>
-</head>
-<body>
-    <header>
-        <h1 class="site-title">Sean Kronz</h1>
-        <p class="site-description">Exploring The World</p>
-        <nav aria-label="Primary Menu">
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="ventures.html">Ventures</a></li>
-                <li><a href="travel.html">Travel</a></li>
-                <li><a href="journal.html">Journal</a></li>
+    
+  </head>
 
+  <body>
+    <h1 class="logo">
+      <span style="color: rgb(28, 144, 192);">S</span>
+      <span style="color: rgb(77, 203, 160);">e</span>
+      <span style="color: rgb(77, 203, 160);">a</span>
+      <span style="color: rgb(77, 203, 160);">n</span>
+      <span style="color: rgb(77, 203, 160);"> </span>
+      <span style="color: rgb(77, 203, 160);">K</span>
+      <span style="color: rgb(77, 203, 160);">r</span>
+      <span style="color: rgb(77, 203, 160);">o</span>
+      <span style="color: rgb(77, 203, 160);">n</span>
+      <span style="color: rgb(77, 203, 160);">z</span>
+    </h1>
 
-            </ul>
-        </nav>
-    </header>
-    <main>
-        <article>
-            <h2 class="entry-title">About Sean</h2>
-            <div class="entry-content">
-                <p>Sean has been doing  ....</p>
-                <!-- Content continues -->
-            </div>
-        </article>
-    </main>
-    <footer>
-        <p>Sean Kronz (SeanKronz@gmail.com)</p>
-    </footer>
-</body>
-</html>
+    <h2>Projects ☼</h2>
+    <p>
+      <a href="https://poolsuite.net">Protein Powder Price</a><br>
+      <a href="https://vacation.inc">Aurise Cosmetics</a>
+    </p>
+
+       <h2>Newsletter ☼</h2>
+    <p>
+      <a href="https://seankronz.com">Coming Soon</a><br>
+    </p>
+
+    <h2>Socials ☼</h2>
+    <p>
+      <a href="https://twitter.com/seankronz">Twitter</a><br>
+      <a href="https://instagram.com/seankronz">Insta</a>
+    </p>
+    <p>See you around!</p>
+
+    <script>
+      const logo = document.querySelector('.logo');
+      const letters = logo.querySelectorAll('span');
+      let i = 0;
+
+      setInterval(() => {
+        letters[i].style.color = '#4dcba0';
+        i = (i + 1) % letters.length;
+        letters[i].style.color = '#1c90c0';
+      }, 1000);
+    </script>
+  
+
+</body></html>

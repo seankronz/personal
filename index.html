@@ -1,6 +1,12 @@
 <!DOCTYPE html>
 <html data-wf-domain="www.seankronz.com">
 <head>
+
+<link rel="apple-touch-icon" sizes="180x180" href="static/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="static/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="static/favicon-16x16.png">
+<link rel="manifest" href="static/site.webmanifest">
+
     <meta charset="utf-8"/>
     <title>Sean Kronz</title>
     <meta content="Sean Kronz" property="og:title"/>
@@ -794,6 +800,33 @@
             padding: 100px 30px 30px;
             display: flex
         }
+
+        .groupcontainer .progress {
+  background: #ddd;
+  justify-content: flex-start;
+  border-radius: 100px;
+  align-items: center;
+  position: relative;
+  padding: 0 5px;
+  display: flex;
+  height: 40px;
+  width: 500px;
+}
+
+.groupcontainer .progress-value {
+  animation: load 3s normal forwards;
+  box-shadow: 0 10px 40px -10px #00ff2f;
+  border-radius: 100px;
+  background: #03C03C;
+  height: 30px;
+  width: 0;
+}
+
+@keyframes load {
+  0% { width: 0; }
+  100% { width:15%; }
+}
+        
         
         @media screen and (min-width:1280px) {
             .top-50 {
@@ -1162,7 +1195,7 @@
                          <div class="text-regular exit w-dyn-bind-empty"></div>
                       </div>
                       <div class="rowbox">
-                         <div class="text-regular">2024</div>
+                         <div class="text-regular">Launched April 2024</div>
                       </div>
                       <div class="rowbox">
                          <a href="https://proteinpowderprice.com/" target="_blank" class="textlink">https://proteinpowderprice.com/</a>
@@ -1447,6 +1480,27 @@
        </div>
     </div> 
     <!-- Lots.txt -->
+    <div id="progress" class="titlecontainer tall">
+        <div class="mediumtext">Progress</div>
+    </div>
+    <div class="groupcontainer">
+        <div class="w-dyn-list">
+            <div role="list" class="w-dyn-items w-row">
+                <div role="listitem" class="package-item w-dyn-item w-col w-col-3">
+                    <div class="outerbox">
+                        <div class="innerbox">
+                            <div class="progress">
+                                <div class="progress-value"></div>
+                              </div>
+                            <div class="rowbox botton">
+                                <div class="text-regular">Current 150</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
     <div class="footercontainer">
        <div class="text-regular">©2024 Sean Kronz </div>
     </div>

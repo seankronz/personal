@@ -1,0 +1,94 @@
+<html lang="en"><head>
+    <meta charset="UTF-8">
+    <title>Sean Kronz</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <script defer="" data-domain="seankronz.com" src="https://plausible.io/js/script.js"></script>
+    <style> 
+body {
+        background-color: #F8F0E3;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+        margin: 0;
+        padding: 0;
+        font-family: Times New Roman, Georgia;
+      }
+      img {
+        width: 200px;
+      }
+      h1, h2, p {
+        text-align: center;
+      }
+      h1 {
+        font-size: 5em;
+        letter-spacing: -12px;
+        font-family: 'Times New Roman', serif;
+        margin-bottom: 10px; /* Adjust as needed */
+      }
+      h2 {
+        font-size: 1em;
+        margin-bottom: 0px;
+      }
+      a:link, a:visited {
+        color: #1c90c0;
+      }
+      .logo span {
+        color: #4dcba0;
+        transition: color 0.3s ease-in-out;
+      }
+    </style>
+    
+  </head>
+
+  <body>
+    <h1 class="logo">
+      <span style="color: rgb(249,161,29);">S</span>
+      <span style="color: rgb(232, 91, 3);">e</span>
+      <span style="color: rgb(232, 91, 3);">a</span>
+      <span style="color: rgb(232, 91, 3);">n</span>
+      <span style="color: rgb(232, 91, 3);"> </span>
+      <span style="color: rgb(232, 91, 3);">K</span>
+      <span style="color: rgb(232, 91, 3);">r</span>
+      <span style="color: rgb(232, 91, 3);">o</span>
+      <span style="color: rgb(232, 91, 3);">n</span>
+      <span style="color: rgb(232, 91, 3);">z</span>
+    </h1>
+
+    <h2>Projects ☼</h2>
+    <p>
+      <a href="https://poolsuite.net">Protein Powder Price</a><br>
+      <a href="https://vacation.inc">Aurise Cosmetics</a>
+    </p>
+
+       <h2>Newsletter ☼</h2>
+    <p>
+      <a href="https://seankronz.com">Coming Soon</a><br>
+    </p>
+
+    <h2>Socials ☼</h2>
+    <p>
+      <a href="https://twitter.com/seankronz">Twitter</a><br>
+      <a href="https://instagram.com/seankronz">Insta</a>
+    </p>
+    <p>See you around!</p>
+
+    <script>
+      const logo = document.querySelector('.logo');
+      const letters = logo.querySelectorAll('span');
+      let i = 0;
+
+      setInterval(() => {
+        letters[i].style.color = '#E85B03';
+        i = (i + 1) % letters.length;
+        letters[i].style.color = '#F9A11D';
+      }, 1000);
+    </script>
+  
+
+</body></html>
